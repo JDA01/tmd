@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <title>Trusvel</title>
+</head>
+
+<body>
+    <nav>
+        <!-- MAIN MENU -->
+        <div class="container">
+            <div id="laptopNav">
+                <a href="#home"><img src="dist/pics/mainLogo.jpg" alt="logo" class="logo"></a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div id="mobileNav">
+            <a href="#home"><img src="dist/pics/mainLogo.jpg" alt="logo" class="logo"></a>
+            <div class="toggler">
+                <div class="burger"></div>
+            </div>
+
+            <div class="navigation">
+                <span style="--i:0"></span>
+                <span style="--i:1"></span>
+                <span style="--i:2"></span>
+                <span style="--i:3"></span>
+
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <section class="showcase">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url('dist/pics/salmon.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('dist/pics/steak.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('dist/pics/pork.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('dist/pics/lamb.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('dist/pics/seafood.jpg')"></div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+
+            <div class="showcase-info">
+                <h2>trusvel</h2>
+                <p>Meat and Seafood Distribution</p>
+                <a href="#about" class="main-btn">why us?</a>
+
+            </div>
+        </section>
+        
+        <section id="products">
+            <div class="products-card">
+                <h2 class="products-title">poultry</h2>
+                <div class="products-img">
+                    <img src="dist/pics/chicken-products.jpg" alt="chicken">
+                </div>
+                <div class="products-list">
+                    <ul>
+                        <li>breast</li>
+                        <li>wings</li>
+                        <li>leg</li>
+                        <li>thighs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="products-card">
+                <h2 class="products-title">beef</h2>
+                <div class="products-img">
+                    <img src="dist/pics/steak-products.jpg" alt="beef">
+                </div>
+                <div class="products-list">
+                    <ul>
+                        <li>flanksteak</li>
+                        <li>inside round</li>
+                        <li>eye round</li>
+                        <li>striploin</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="products-card">
+                <h2 class="products-title">seafood</h2>
+                <div class="products-img">
+                    <img src="dist/pics/seafood-products.jpg" alt="seafood">
+                </div>
+                <div class="products-list">
+                    <ul>
+                        <li>salmon</li>
+                        <li>scallops</li>
+                        <li>shrimps</li>
+                        <li>squid</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="products-card">
+                <h2 class="products-title">lamb</h2>
+                <div class="products-img">
+                    <img src="dist/pics/lamb-products.jpg" alt="lamb">
+                </div>
+                <div class="products-list">
+                    <ul>
+                        <li>leg</li>
+                        <li>shoulder</li>
+                        <li>chops</li>
+                        <li>shanks</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="products-card">
+                <h2 class="products-title">pork</h2>
+                <div class="products-img">
+                    <img src="dist/pics/pork-products.jpg" alt="pork">
+                </div>
+                <div class="products-list">
+                    <ul>
+                        <li>flanks</li>
+                        <li>leg</li>
+                        <li>shoulder</li>
+                        <li>spareribs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Who we are<span class="main-char">?</span></h2>
+            <div class="border"></div>
+            <div class="about-info">
+                
+            <p>
+                We are a meat and seafood distribution company. We offer home delivery and our wholesale prices are tough to beat.
+                We have a wide range of products including organic products. At trusvel we are fully commited to our customers and work hard to ensure they are satisfied and recieve there order on time. For any inquiries, please feel free to reach out to us.<a href="#contact"><i class="fas fa-mobile-alt"></i></a> 
+            </p>
+            </div>
+
+            <div class="about-img"></div>
+
+
+        </section>
+
+
+
+        <section id="services">
+            <div class="service-card">
+                <i class="fas fa-truck"></i>
+                <p class="service-info">
+                    Free delivery to the comfort of your home
+                </p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-dollar-sign"></i>
+                <p class="service-info">
+                    Affordable and competitive prices
+                </p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-user-friends"></i>
+                <p class="service-info">
+                    We work hard to ensure our customers get the best quality meat and are fully satisfied with our
+                    service
+                </p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-globe"></i>
+                <p class="service-info">
+                    We have a vast range of different products including organic products as well
+                </p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-info">
+                <h2>give us a call today!</h2>
+                
+                <a href="tel:514-518-7594" class="main-number">514-518-7594</a>
+
+                <div class="border"></div>
+
+                <ul>
+                    
+                    <li>
+                        <a href="mailto:igorsahadyuk@gmail.com">
+                            <i class="fas fa-at icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        
+                        <a href="https://www.facebook.com/trusvelgroup">
+                            <i class="fab fa-facebook-square icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                         <a href="tel:514-518-7594">
+                             <i class="fas fa-phone icon"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="contact-img">
+                <img src="dist/pics/contact.jpg" alt="contact">
+            </div>
+        </section>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178790.956034495!2d-73.87038772548912!3d45.55819684661972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2sMontreal%2C%20QC!5e0!3m2!1sen!2sca!4v1615791198742!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+       
+    </div>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#about">services</a></li>
+                <li ><a href="#contact">services</a></li>
+                <div class="border-right"></div>
+                <li><a href="tel:514-531-1512"><i class="fas fa-phone icon"></i></a></li>
+                <li><a href="https://www.facebook.com/trusvelgroup"><i class="fab fa-facebook-square icon"></i></a></li>
+                <li><a href="mailto:"><i class="fas fa-at icon"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/dist/js/app.js"></script>
+
+</body>
+
+</html>
