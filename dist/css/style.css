@@ -283,7 +283,7 @@ body {
   color: #e3f6f5;
   margin: 2rem;
   padding: 2rem;
-  background-image: url("/dist/pics/about-img.jpg");
+  background-image: url("dist/pics/about-img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -419,6 +419,15 @@ body {
   width: 100%;
 }
 
+.map {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.map iframe {
+  width: 100%;
+}
+
 footer {
   width: 100%;
   background: #272343;
@@ -441,13 +450,5 @@ footer .border-right {
 footer a {
   color: #bae8e8;
   font-size: 1.4rem;
-}
-
-.map {
-  width: 100%;
-  margin: 1rem 0;
-}
-
-.map iframe {
-  width: 100%;
+  text-transform: capitalize;
 }
