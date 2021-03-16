@@ -1,10 +1,13 @@
 const toggler = document.querySelector(".toggler");
 const burger = document.querySelector(".burger");
-const navigation = document.querySelector(".navigation");
+// const navigation = document.querySelector(".navigation");
+const mobileNav = document.querySelector("#mobile-nav");
+
 
 toggler.addEventListener("click", function(){
     burger.classList.toggle("open");
-    navigation.classList.toggle("active");
+    // navigation.classList.toggle("active");
+    mobileNav.classList.toggle("width");
 });
 
 
