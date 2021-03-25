@@ -33,32 +33,42 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
+  transition: .4s;
 }
 
-#laptopNav {
-  display: none;
+.logo {
+  width: 100%;
+  height: 150px;
+  padding: 1rem;
+  object-fit: fill;
+}
+
+.laptop-wrapper {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#laptopNav ul {
-  display: flex;
+.laptop-wrapper .laptop-menu {
+  display: none;
 }
 
-#laptopNav ul li {
+.laptop-wrapper ul li {
   font-size: 2rem;
   padding: 2rem;
-  color: #e3f6f5;
 }
 
-#laptopNav ul li a {
-  color: #e3f6f5;
+.laptop-wrapper ul li a {
+  color: #272343;
   letter-spacing: .3rem;
   text-transform: uppercase;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid transparent;
+  transition: .4s;
 }
 
-#laptopNav ul li a:hover {
-  border-bottom: 3px solid #bae8e8;
+.laptop-wrapper ul li a:hover {
+  border-color: #bae8e8;
 }
 
 .overlay {
@@ -152,13 +162,6 @@ nav {
 
 .open.burger:after {
   transform: rotate(-45deg) translate(35px, 35px);
-}
-
-.logo {
-  width: 100%;
-  height: 150px;
-  padding: 1rem;
-  object-fit: fill;
 }
 
 .swiper-container {
@@ -283,7 +286,7 @@ body {
   color: #e3f6f5;
   margin: 2rem;
   padding: 2rem;
-  background-image: url(dist/pics/about.JPG);
+  background-image: url(/dist/pics/about.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -420,12 +423,12 @@ body {
 }
 
 .map {
-  width: 100%;
   margin: 1rem 0;
 }
 
 .map iframe {
-  width: 100%;
+  width: 600px;
+  height: 450px;
 }
 
 footer {
@@ -451,4 +454,160 @@ footer a {
   color: #bae8e8;
   font-size: 1.4rem;
   text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 1rem;
+    background: #272343;
+  }
+  .logo {
+    width: 50%;
+    height: auto;
+    padding: 0rem;
+    border-radius: 25%;
+    box-shadow: 0 5px 10px rgba(186, 232, 232, 0.5);
+    margin: 1rem;
+  }
+  .toggler {
+    top: 25%;
+    right: 10%;
+  }
+  .showcase {
+    margin-top: 3rem;
+    flex-direction: row;
+  }
+  .showcase .swiper-container {
+    width: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .showcase .swiper-slide {
+    width: 250px;
+    background-position: center;
+    background-size: cover;
+  }
+  #products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  #products .products-card {
+    width: 300px;
+    margin: .7rem;
+  }
+  #products .products-card .products-list {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  #about p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    letter-spacing: 2px;
+  }
+  #services {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem;
+  }
+  #services .service-card {
+    width: 300px;
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  #services .service-info {
+    font-size: 1.8rem;
+  }
+  #contact {
+    margin: 3rem;
+    flex-direction: row;
+  }
+  #contact .contact-info {
+    width: 700px;
+    order: 1;
+  }
+  #contact .contact-img {
+    order: 2;
+  }
+  .map {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  nav {
+    padding: 3rem;
+  }
+  #mobile-menu,
+  .toggler {
+    display: none;
+  }
+  .laptop-wrapper .laptop-menu {
+    display: flex;
+  }
+  .logo {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  .showcase {
+    margin-top: 3rem;
+    flex-direction: row;
+  }
+  .showcase .swiper-container {
+    width: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  #products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  #products .products-card {
+    width: 300px;
+    margin: .7rem;
+  }
+  #products .products-card .products-list {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  #about p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    letter-spacing: 2px;
+  }
+  #services {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem;
+  }
+  #services .service-card {
+    width: 400px;
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  #services .service-info {
+    font-size: 1.8rem;
+  }
+  #contact {
+    margin: 3rem;
+    flex-direction: row;
+  }
+  #contact .contact-info {
+    width: 700px;
+    order: 1;
+  }
+  #contact .contact-img {
+    order: 2;
+  }
+  .map {
+    display: none;
+  }
 }
