@@ -536,7 +536,7 @@ footer a {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1180px) {
   nav {
     padding: 3rem;
   }
@@ -546,6 +546,9 @@ footer a {
   }
   .laptop-wrapper .laptop-menu {
     display: flex;
+  }
+  .laptop-wrapper .laptop-menu a {
+    color: #bae8e8;
   }
   .logo {
     width: 80%;
